@@ -4,7 +4,8 @@ import json
 import boto3
 
 secrets_client = boto3.client(
-    'secretsmanager'
+    'secretsmanager',
+    region = '<your-region>'
 )
 
 # Get credentials from AWS Secret Manager 
